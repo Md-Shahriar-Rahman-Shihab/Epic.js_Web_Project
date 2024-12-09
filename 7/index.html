@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discage Sheba</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="material-icons">apps</span>
+                <h2>Discage Sheba</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active">
+                        <span class="material-icons">home</span>
+                        Home
+                    </li>
+                    <li>
+                        <span class="material-icons">rate_review</span>
+                        Reviews
+                    </li>
+                    <li>
+                        <span class="material-icons">person</span>
+                        User
+                    </li>
+                    <li>
+                        <span class="material-icons">settings</span>
+                        Settings
+                    </li>
+                    <li class="logout">
+                        <span class="material-icons">logout</span>
+                        Logout
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-left">
+                    <span class="material-icons">chevron_right</span>
+                    <span>User</span>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search or type a command (Ctrl + G)">
+                    </div>
+                    <div class="user-menu">
+                        <span class="material-icons notification">notifications</span>
+                        <span class="notification-badge">2</span>
+                        <div class="user-avatar">Jay</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content">
+                <h1>Result</h1>
+                <div class="tabs">
+                    <button class="tab active">Total Service</button>
+                </div>
+                
+                <div class="table-container">
+                    <table id="servicesTable">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>Services</th>
+                                <th>Status</th>
+                                <th>Order ID</th>
+                                <th>Tracking Number</th>
+                                <th>Date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- JavaScript will populate this -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

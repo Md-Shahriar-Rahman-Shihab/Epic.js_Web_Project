@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Sheba - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="material-icons">apps</span>
+                <h2>Epic Sheba</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="material-icons">home</span>
+                        <span>Home</span>
+                    </li>
+                    <li class="active">
+                        <span class="material-icons">people</span>
+                        <span>Client Page</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">category</span>
+                        <span>Category</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">rate_review</span>
+                        <span>Reviews</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">person</span>
+                        <span>User</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">settings</span>
+                        <span>Settings</span>
+                    </li>
+                    <li class="logout">
+                        <span class="material-icons">logout</span>
+                        <span>Logout</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-left">
+                    <div class="breadcrumb">
+                        <span>Client</span>
+                        <span class="material-icons">chevron_right</span>
+                        <span>Services</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search or type a command (Ctrl + G)">
+                    </div>
+                    <div class="user-menu">
+                        <div class="notification-container">
+                            <span class="material-icons">notifications</span>
+                            <span class="notification-badge">2</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Joy&background=f0f7ff&color=0066ff" alt="Joy">
+                            <span>Joy</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content">
+                <div class="services-header">
+                    <h1>Services</h1>
+                    <button class="view-plan-btn">View Plan <span class="material-icons">chevron_right</span></button>
+                </div>
+
+                <!-- Car Services Section -->
+                <section class="services-section">
+                    <h2>Car Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon car-cleaning"></div>
+                            <span class="service-name">Car Cleaning</span>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon oil-filter"></div>
+                            <span class="service-name">Oil Filter Change</span>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon new-tires"></div>
+                            <span class="service-name">New Tires</span>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon scheduled-maintenance"></div>
+                            <span class="service-name">Scheduled Maintenance</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Home Cleaning Services Section -->
+                <section class="services-section">
+                    <h2>Home Cleaning Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon window-cleaning"></div>
+                            <span class="service-name">Window Cleaning</span>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon carpet-cleaning"></div>
+                            <span class="service-name">Carpet Cleaning</span>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon bathroom-cleaning"></div>
+                            <span class="service-name">Bathroom Cleaning</span>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon deep-cleaning"></div>
+                            <span class="service-name">Deep Cleaning</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Ask Your Query Button -->
+            <div class="query-button">
+                <button>
+                    Ask Your Query 🔥
+                    <div class="chat-indicator">
+                        <span class="material-icons">chat</span>
+                        <span class="chat-badge">1</span>
+                    </div>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

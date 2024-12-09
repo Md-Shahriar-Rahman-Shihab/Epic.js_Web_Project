@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Sheba</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="material-icons">apps</span>
+                <h2>Epic Sheba</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="material-icons">home</span>
+                        Home
+                    </li>
+                    <li>
+                        <span class="material-icons">people</span>
+                        Client Page
+                    </li>
+                    <li>
+                        <span class="material-icons">category</span>
+                        Category
+                    </li>
+                    <li>
+                        <span class="material-icons">rate_review</span>
+                        Reviews
+                    </li>
+                    <li>
+                        <span class="material-icons">person</span>
+                        User
+                    </li>
+                    <li>
+                        <span class="material-icons">settings</span>
+                        Settings
+                    </li>
+                    <li class="logout">
+                        <span class="material-icons">logout</span>
+                        Logout
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-left">
+                    <div class="breadcrumb">
+                        <span>Payment</span>
+                        <span class="material-icons">chevron_right</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search or type a command (Ctrl + G)">
+                    </div>
+                    <div class="user-menu">
+                        <div class="notification-container">
+                            <span class="material-icons">notifications</span>
+                            <span class="notification-badge">2</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Joy&background=f0f7ff&color=0066ff" alt="Joy">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content">
+                <h1>Payment</h1>
+                
+                <div class="pricing-container">
+                    <div class="pricing-card daily">
+                        <h2>Daily Plan</h2>
+                        <div class="duration">1 Day</div>
+                        <div class="price">200 BDT</div>
+                    </div>
+
+                    <div class="pricing-cards">
+                        <div class="pricing-card basic">
+                            <h2>Basic Plan</h2>
+                            <div class="duration">7 Days</div>
+                            <div class="price">1200 BDT</div>
+                            <button class="get-started-btn outline">Get Started</button>
+                        </div>
+
+                        <div class="pricing-card standard">
+                            <h2>Standard Plan</h2>
+                            <div class="duration">15 Days</div>
+                            <div class="price">2200 BDT</div>
+                            <button class="get-started-btn filled">Get Started</button>
+                        </div>
+
+                        <div class="pricing-card premium">
+                            <h2>Premium Plan</h2>
+                            <div class="duration">30 Days</div>
+                            <div class="price">3000 BDT</div>
+                            <button class="get-started-btn outline">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <img src="https://raw.githubusercontent.com/shahriarshihab/payment-icons/main/payment-icons.png" alt="Payment Methods" class="payment-icons">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

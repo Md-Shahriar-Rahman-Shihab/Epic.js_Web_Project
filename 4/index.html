@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Sheba</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="material-icons">apps</span>
+                <h2>Epic Sheba</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="material-icons">home</span>
+                        Home
+                    </li>
+                    <li>
+                        <span class="material-icons">people</span>
+                        Client Page
+                    </li>
+                    <li>
+                        <span class="material-icons">category</span>
+                        Category
+                    </li>
+                    <li>
+                        <span class="material-icons">rate_review</span>
+                        Reviews
+                    </li>
+                    <li class="active">
+                        <span class="material-icons">person</span>
+                        User
+                    </li>
+                    <li>
+                        <span class="material-icons">settings</span>
+                        Settings
+                    </li>
+                    <li class="logout">
+                        <span class="material-icons">logout</span>
+                        Logout
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-left">
+                    <div class="breadcrumb">
+                        <span>User</span>
+                        <span class="material-icons">chevron_right</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search or type a command (Ctrl + G)">
+                    </div>
+                    <div class="user-menu">
+                        <div class="notification-container">
+                            <span class="material-icons">notifications</span>
+                            <span class="notification-badge">2</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Joy&background=f0f7ff&color=0066ff" alt="Joy">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content">
+                <h1>User</h1>
+                
+                <div class="service-tabs">
+                    <button class="tab active">Total Service</button>
+                    <button class="tab">Car Cleaning</button>
+                    <button class="tab">Oil Filter Change</button>
+                    <button class="tab">New Tires</button>
+                    <button class="tab">Carpet Cleaning</button>
+                    <button class="tab">Window Cleaning</button>
+                    <button class="tab">Deep Cleaning</button>
+                </div>
+
+                <div class="table-controls">
+                    <div class="left-controls">
+                        <div class="date-filter">
+                            <span class="material-icons">calendar_today</span>
+                            <select>
+                                <option>Last 30 days</option>
+                            </select>
+                        </div>
+                        <div class="filter-by">
+                            <span class="material-icons">filter_list</span>
+                            <span>Filter by</span>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        Page 1 of 4
+                        <button class="nav-btn" disabled><span class="material-icons">chevron_left</span></button>
+                        <button class="nav-btn"><span class="material-icons">chevron_right</span></button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>Services</th>
+                                <th>Status</th>
+                                <th>Order ID</th>
+                                <th>Tracking Number</th>
+                                <th>Date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="servicesTableBody">
+                            <!-- JavaScript will populate this -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

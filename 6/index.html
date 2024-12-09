@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Sheba</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="material-icons">apps</span>
+                <h2>Epic Sheba</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active">
+                        <span class="material-icons">home</span>
+                        Home
+                    </li>
+                    <li>
+                        <span class="material-icons">rate_review</span>
+                        Reviews
+                    </li>
+                    <li>
+                        <span class="material-icons">person</span>
+                        User
+                    </li>
+                    <li>
+                        <span class="material-icons">settings</span>
+                        Settings
+                    </li>
+                    <li class="logout">
+                        <span class="material-icons">logout</span>
+                        Logout
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-left">
+                    <div class="breadcrumb">
+                        <span>Home</span>
+                        <span class="material-icons">chevron_right</span>
+                        <span>Trending Now</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search or type a command (Ctrl + G)">
+                    </div>
+                    <div class="user-menu">
+                        <div class="notification-container">
+                            <span class="material-icons">notifications</span>
+                            <span class="notification-badge">2</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Joy&background=f0f7ff&color=0066ff" alt="Joy">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content">
+                <h1>Image to Text Converter</h1>
+                <p class="subtitle">Extract Bangla Text From Image</p>
+
+                <div class="steps">
+                    <div class="step active">
+                        <span class="step-number">1</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                    </div>
+                </div>
+
+                <div class="upload-container" id="dropZone">
+                    <div class="upload-content">
+                        <div class="image-icon">
+                            <span class="material-icons">image</span>
+                        </div>
+                        <p>Drag and drop your image here</p>
+                        <p class="or">OR</p>
+                        <button class="upload-btn" id="uploadBtn">Upload Image</button>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <select class="control-btn" id="languageSelect">
+                        <option value="bangla">Bangla Only</option>
+                    </select>
+                    <select class="control-btn" id="lineSelect">
+                        <option value="keep">Keep New Line</option>
+                    </select>
+                    <button class="control-btn convert-btn">
+                        <span class="material-icons">refresh</span>
+                        Convert
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
